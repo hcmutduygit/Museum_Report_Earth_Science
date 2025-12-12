@@ -1,0 +1,35 @@
+\documentclass[12pt,a4paper]{report}
+\input{library}
+\addbibresource{references.bib} 
+
+%Header
+\fancyhead{} % clear all header fields
+\fancyhead[L]{
+    \begin{tabular}{rl}
+        \begin{picture}(15, 15)(0,0)
+            \put(-15, -15){\includegraphics[width=17mm, height=12mm]{pictures/hcmut.png}}
+        \end{picture}&
+        \begin{tabular}{l}
+            \textbf{\bf \ttfamily Ho Chi Minh City University of Technology}\\
+            \textbf{\bf \ttfamily Field Trip Report}\\
+        \end{tabular} 	
+    \end{tabular}
+}
+\fancyhead[R]{CHAPTER \thechapter}
+% Footer
+\fancyfoot[C]{\thepage} % số trang giữa
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\begin{document}
+    \include{titlepage}
+    \include{introduction}
+    \tableofcontents  
+    \listoftables
+    \listoffigures
+    \newpage
+    \normalsize
+    \include{chapter1}
+    \include{chapter2}
+    \include{chapter3}
+\end{document}
